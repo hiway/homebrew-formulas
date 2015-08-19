@@ -7,7 +7,7 @@ class Rtmidi < Formula
 
   def install
     system "autoconf"
-    system "./configure", "--prefix=#{prefix}"
+    system "./configure"
     
     system "make"
     lib.install Dir['*.a', '*.dylib']
