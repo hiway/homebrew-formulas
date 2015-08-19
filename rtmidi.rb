@@ -6,6 +6,7 @@ class Rtmidi < Formula
   sha1 "0d6a6797cdd8d75e501873c3c96e37b5f20c9ab2"
 
   def install
+    system "autoconf"
     system "./configure", "--prefix=#{prefix}"
     
     system "make"
